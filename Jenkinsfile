@@ -3,7 +3,6 @@ pipeline {
   stages {
     stage('Test') {
       steps {
-        sh 'ls C:\\'
         echo 'Test : OK'
       }
     }
