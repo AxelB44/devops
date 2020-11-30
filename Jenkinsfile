@@ -7,6 +7,12 @@ pipeline {
   }
   stages {
     stage('Test') {
+      agent {
+        dockerfile {
+          filename 'Dockerfile'
+        }
+
+      }
       steps {
         sh 'npm --version'
       }
