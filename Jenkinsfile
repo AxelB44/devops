@@ -1,7 +1,7 @@
 pipeline {
   agent {
     dockerfile {
-      filename 'Dockerfile'
+      filename './app/py_master/Dockerfile'
     }
 
   }
@@ -14,7 +14,7 @@ pipeline {
 
       }
       steps {
-        sh 'npm --version'
+        sh ' python --version'
       }
     }
 
