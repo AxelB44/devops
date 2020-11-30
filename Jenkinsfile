@@ -3,7 +3,7 @@ pipeline {
   stages {
     stage('error') {
       steps {
-        sh 'echo je t\'aime'
+        sh 'ls C:/'
       }
     }
 
