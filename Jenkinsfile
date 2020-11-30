@@ -3,7 +3,7 @@ pipeline {
   stages {
     stage('error') {
       steps {
-        sh 'ls C:/'
+        sh 'ls C:\\'
       }
     }
 
