@@ -1,15 +1,23 @@
 pipeline {
-    agent {
-        docker {
-            image 'devops_nodejs' 
-            args '-p 6060:6060' 
-        }
+  agent {
+    docker {
+      image 'devops_nodejs'
+      args '-p 6060:6060'
     }
-    stages {
-        stage('Build') { 
-            steps {
-                sh 'npm install' 
-            }
-        }
+
+  }
+  stages {
+    stage('Build') {
+      steps {
+        sh 'npm install'
+      }
     }
+
+    stage('Test') {
+      steps {
+        sh 'npm --version'
+      }
+    }
+
+  }
 }
