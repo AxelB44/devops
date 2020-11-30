@@ -1,20 +1,14 @@
 pipeline {
   agent {
     dockerfile {
-      filename './app/py_master/Dockerfile'
+      filename 'Dockerfile'
     }
 
   }
   stages {
-    stage('Test') {
-      agent {
-        dockerfile {
-          filename 'Dockerfile'
-        }
-
-      }
+    stage('') {
       steps {
-        sh ' python --version'
+        echo '987'
       }
     }
 
